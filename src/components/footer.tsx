@@ -3,6 +3,7 @@ import motds from "../misc/motds";
 export default function Footer() {
     return (
         <footer>
+            <div class="misc-padding"></div>
             <div class="footer">
                 <MOTD />
                 <Socials />

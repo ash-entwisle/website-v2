@@ -1,0 +1,65 @@
+@import 'variables';
+
+// add /public/fonts/jetbrains-mono.woff2
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('/fonts/jetbrains-mono.woff2') format('woff2');
+}
+
+body {
+    font-family: 'JetBrains Mono', monospace;
+
+    // set default colors
+    background-color: $c-darker;
+    color: $c-white;
+    
+    // make links look nice
+    a {
+        color: $c-light;
+        &:hover {
+            color: $c-white;
+        }
+    }
+
+    // thin down h1
+    h1 {
+        font-weight: 400;
+    }
+
+    // thin down h2
+    h2 {
+        font-weight: 400;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        border: 0;
+    }
+
+    // remove margins, borders and padding
+    margin: 0;
+    padding: 0;
+    border: 0;
+    
+    * {
+        box-sizing: border-box;
+    }
+}
+
+main {
+    // set background color
+    background-color: $c-darker;
+
+    // set padding
+    padding: 1rem;
+
+    // set height to fill the rest of the page at least
+    min-height: $m-height;
+
+    // offset by 6vh down
+    margin-top: 6vh;
+
+}

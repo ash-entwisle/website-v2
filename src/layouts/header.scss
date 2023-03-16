@@ -1,0 +1,48 @@
+@import 'variables';
+
+header {
+    // set background color
+    background-color: $c-darker;
+
+    // set padding 
+    box-sizing: border-box;
+    padding: 5px;
+    padding-bottom: 0;
+
+    // lock to the top of viewport
+    top: 0;
+    width: 100%;
+    height: $h-height;
+
+    // flex 
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .nav {
+        // justify content to the right
+
+        a {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+    }
+
+    // center self when width is less than 500px
+    @media only screen and (max-width: 500px) {
+        justify-content: center;
+    }
+
+    img {
+        width: 6vh;
+        height: $h-height;
+
+        // if width less than 500px, hide 
+        @media only screen and (max-width: 500px) {
+            display: none;
+        }
+    }
+}
