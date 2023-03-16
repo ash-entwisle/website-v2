@@ -32,12 +32,6 @@
     
 }
 
-// add /public/fonts/jetbrains-mono.woff2
-@font-face {
-    font-family: 'JetBrains Mono';
-    src: url('/fonts/jetbrains-mono.woff2') format('woff2');
-}
-
 body {
     font-family: 'JetBrains Mono', monospace;
 
