@@ -28,11 +28,9 @@ function MOTD() {
 function Socials() {
     return (
         <div class="socials">
-            <a href=""><img src="/assets/github.svg" alt="GitHub" /></a>
-            <a href=""><img src="/assets/linkedin.svg" alt="LinkedIn" /></a>
-            <a href=""><img src="/assets/cohost.svg" alt="Cohost" /></a>
-            <a href=""><img src="/assets/mastodon.svg" alt="Mastodon" /></a>
-            <a href=""><img src="/assets/email.svg" alt="Email" /></a>
+            <p>
+            <a href="">Github</a> <a href="">LinkedIn</a> <a href="">Cohost</a> <a href="">Mastodon</a> <a href="">Email</a>
+            </p>
         </div>
     );
 }

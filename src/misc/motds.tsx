@@ -1,7 +1,7 @@
 
 export default function motds() {
     return [
-        "Hello, World!",
+        "\"Hello, World!\"",
         "I'm currently looking for a job!",
         "How much wood would a woodchuck chuck if a woodchuck could chuck wood?",
         "A wood chuck would chuck as much wood as a wood chuck could chuck if a wood chuck could chuck wood.",
@@ -15,5 +15,8 @@ export default function motds() {
         "areeee teeeee effffff emmmmm",
         ":(){:|:&};:",
         "sudo rm -rf /* --no-preserve-root",
+        "Hater of JS",
+        "TypeScipt is just a bandaid",
+        
     ];
 }

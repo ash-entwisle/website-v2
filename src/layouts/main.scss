@@ -21,7 +21,7 @@
     --h-height-max: 75px;
     --h-height-min: 50px;
 
-    --f-height: 150px; // TODO: make this dynamic
+    --f-height: 175px; // TODO: make this dynamic
     --f-height-max: 500px;
     --f-height-min: 150px;
     --m-height: calc(100vh - var(--h-height) - var(--f-height));
@@ -95,7 +95,7 @@ main {
     min-height: var(--m-height);
 
     // offset by 6vh down
-    //margin-top: var(--h-height);
+    margin-top: var(--h-height);
 
 }
 
@@ -105,6 +105,10 @@ header {
     height: var(--h-height);
 
     // justify content
+    box-sizing: border-box;
+    position: fixed;
+    width: 100vw;
+    top: 0;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -121,7 +125,17 @@ header {
     .title {
         height: var(--h-height);
         width: var(--h-height);
+
+        // hide if less than 500px
+        @media only screen and (max-width: 450px) {
+            display: none;
+        }
     }
+
+    @media only screen and (max-width: 450px) {
+        justify-content: center;
+    }
+    
 }
 
 footer {
@@ -140,7 +154,7 @@ footer {
 
     // make it grid with 3 columns
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 3fr 1fr;
 
     // alling items in .foorter
     .footer {
@@ -166,6 +180,12 @@ footer {
 
         // set overflow
         overflow: hidden;
+        
+        img {
+            @media only screen and (max-width: 250px) {
+                    display: none;
+                }
+        }
     }
 
     .logo {
@@ -174,18 +194,33 @@ footer {
         img {
             width: var(--f-height);
             height: var(--f-height);
+            
+            @media only screen and (max-width: 500px) {
+                    display: none;
+                }
         }
     }
 
-    img {
+    .socials {
+        display: block;
+        white-space: pre-wrap;
+    }
 
-        padding-left: 10px;
-        padding-right: 10px;
-
-        // if width less than 500px, hide 
-        @media only screen and (max-width: 500px) {
+    .motd {
+        // if less than 750px, hide
+        @media only screen and (max-width: 750px) {
             display: none;
         }
+        width: 100%;
+        height: 25%;
     }
 
+    // if less than 500px, turn off grid
+    @media only screen and (max-width: 500px) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: fit-content;
+        
+    }
 }
