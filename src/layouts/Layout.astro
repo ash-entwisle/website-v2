@@ -1,6 +1,7 @@
 ---
 import Header from '../components/header';
 import Footer from '../components/footer';
+import '../layouts/main.scss';
 export interface Props {
     title: string;
 }
@@ -14,7 +15,7 @@ const { title } = Astro.props;
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <link rel="stylesheet" href="/public/styles/main.scss">
+        <link rel="stylesheet" href="/styles/main.scss">
 		<meta name="generator" content={Astro.generator} />
         <title>{title}</title>
     </head>
