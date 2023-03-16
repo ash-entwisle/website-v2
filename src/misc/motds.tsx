@@ -12,5 +12,8 @@ export default function motds() {
         "Trans Rights !!",
         "I Hate Mondays",
         "Rust is Love, Rust is Life",
+        "areeee teeeee effffff emmmmm",
+        ":(){:|:&};:",
+        "sudo rm -rf /* --no-preserve-root",
     ];
 }
