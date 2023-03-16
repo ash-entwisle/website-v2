@@ -12,8 +12,7 @@ function Title() {
     // add svg logo here
     return (
         <div class="title">
-            <img src="/assets/logo.svg" alt="</>" />
-            <a href="/">Ash Entwisle</a>
+            <a href="/"><img src="/assets/logo.svg" alt="</>" /></a>
         </div>
     );
 }

@@ -1,0 +1,139 @@
+:root {
+    // OneDark colors
+    --c-black: #000000;
+    --c-darker: #1c1f26;
+    --c-dark: #282c34;
+    --c-grey: #3e4451;
+    --c-light: #abb2bf;
+    --c-white: #ffffff;
+    
+    --c-red: #e06c75;
+    --c-orange: #d19a66;
+    --c-yellow: #e5c07b;
+    --c-green: #98c379;
+    --c-greener: #56b6c2;
+    --c-cyan: #56b6c2;
+    --c-blue: #61afef;
+    --c-purple: #c678dd;
+    --c-pink: #be5046;
+    --c-brown: #d19a66; // TODO: find a better color
+
+}
+
+// add /public/fonts/jetbrains-mono.woff2
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('/fonts/jetbrains-mono.woff2') format('woff2');
+}
+
+body {
+    font-family: 'JetBrains Mono', monospace;
+
+    // set default colors
+    background-color: var(--c-darker);
+    color: var(--c-white);
+    
+    // make links look nice
+    a {
+        color: var(--c-white);
+        &:hover {
+            color: var(--c-light);
+        }
+    }
+
+    // thin down h1
+    h1 {
+        font-weight: 400;
+    }
+
+    // thin down h2
+    h2 {
+        font-weight: 400;
+    }
+
+    // remove margins, borders and padding
+    margin: 0;
+    padding: 0;
+    border: 0;
+    
+    * {
+        box-sizing: border-box;
+    }
+}
+
+header {
+    // set background color
+    background-color: var(--c-darker);
+    
+    // set padding 
+    box-sizing: border-box;
+    padding: 1rem;
+
+    // lock to the top of viewport
+    top: 0;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+
+    // flex 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+
+    img {
+        height: 100px;
+        width: 100px;
+    }
+}
+
+footer {
+    // set background color
+    background-color: var(--c-darker);
+
+    // set padding
+    padding: 1rem;
+    padding-bottom: 0;
+
+    // set footer to bottom
+    position: flex;
+    flex-direction: row;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+
+    // center content
+    // flex in row
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    .footer {
+        // center footer content
+        // wrap text if greater than 25vw
+        width: 100vw;
+        text-align: center;
+        word-wrap: break-word;       
+        font-size: small;
+    }
+
+    img {
+        height: 100px;
+        width: 100px;
+    }
+}
+
+main {
+    // set background color
+    background-color: var(--c-dark);
+
+    // set padding
+    padding: 1rem;
+
+    // set height to fill the rest of the page at least
+    min-height: 100vh;
+
+    // set position as to not overlap with header, but still be scrollable
+
+}

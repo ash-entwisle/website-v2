@@ -19,7 +19,7 @@ function MOTD() {
     let motd = motds()[Math.floor(Math.random() * motds().length)];
     return (
         <div class="motd">
-            <p>{ motd }</p>
+            <p><i>{ motd }</i></p>
         </div>
     );
 }
