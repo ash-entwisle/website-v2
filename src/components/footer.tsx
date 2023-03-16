@@ -29,7 +29,7 @@ function Socials() {
     return (
         <div class="socials">
             <p>
-            <a href="">Github</a> <a href="">LinkedIn</a> <a href="">Cohost</a> <a href="">Mastodon</a> <a href="">Email</a>
+            <a href="https://github.com/ash-entwisle">Github</a> <a href="https://linkedin/in/ash-entwisle">LinkedIn</a> <a href="">Cohost</a> <a href="">Mastodon</a> <a href="mailto://ash.entwisle@protonmail.com">Email</a>
             </p>
         </div>
     );
