@@ -1,0 +1,17 @@
+---
+import Header from '../components/header';
+import Footer from '../components/footer';
+import Layout from '../layouts/Layout.astro';
+import '../layouts/main.scss';
+import '../layouts/markdown.scss';
+const { frontmatter }= Astro.props;
+---
+
+<Layout title= { frontmatter.title } >
+    <div class="mdheader">
+        <h1>{ frontmatter.title }</h1>
+        <h2><b>By: <a><i> { frontmatter.author } </i></a></b>@ {frontmatter.date}</h2>
+        <p><i> {frontmatter.description} </i></p>
+    </div>
+    <slot />
+</Layout>

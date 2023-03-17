@@ -5,7 +5,6 @@ export default function motds() {
         "I'm currently looking for a job!",
         "How much wood would a woodchuck chuck if a woodchuck could chuck wood?",
         "A wood chuck would chuck as much wood as a wood chuck could chuck if a wood chuck could chuck wood.",
-        "I Hate JS",
         "Learning WASM...",
         "stack overflow => ctrl + c => ctrl + v",
         "I'm a software developer, not a magician.",
@@ -21,12 +20,12 @@ export default function motds() {
         "you gotta be crazy to use vim or emacs, this is why I use helix",
         "modal editing is the future",
         "DROP table Production;",
-        "The only good JavaScript is no JavaScript",
+        "The only good ammount of JavaScript is no JavaScript",
         "Why use JS, when you can use Rust?",
         "U w U",
         "according to all known laws of aviation, there is no way a bee should be able to fly",
         "somebody once told me the world is gonna roll me",
         "me when css: (╯°□°)╯︵ ┻━┻",
-        "It works on my machine ¯\_(ツ)_/¯",
+        "It works on my machine ¯\\_(ツ)_/¯",
     ];
 }
