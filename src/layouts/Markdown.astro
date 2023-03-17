@@ -13,5 +13,7 @@ const { frontmatter }= Astro.props;
         <h2><b>By: <a><i> { frontmatter.author } </i></a></b>@ {frontmatter.date}</h2>
         <p><i> {frontmatter.description} </i></p>
     </div>
-    <slot />
+    <div class="mdcontent">
+        <slot />
+    </div>
 </Layout>
