@@ -27,5 +27,9 @@ export default function motds() {
         "somebody once told me the world is gonna roll me",
         "me when css: (╯°□°)╯︵ ┻━┻",
         "It works on my machine ¯\\_(ツ)_/¯",
+        "LGTM!! *pushes directly to prod*",
+        "Ash, I told you to not push to main",
+        "I'm not a robot",
+        "404: Motd not found",
     ];
 }
