@@ -29,7 +29,7 @@ function Socials() {
     return (
         <div class="socials">
             <p>
-            <a href="https://github.com/ash-entwisle">Github</a> <a href="https://linkedin/in/ash-entwisle">LinkedIn</a> <a href="">Cohost</a> <a href="">Mastodon</a> <a href="mailto://ash.entwisle@protonmail.com">Email</a>
+            <a href="https://github.com/ash-entwisle">Github</a> <a href="https://linkedin.com/in/ash-entwisle">LinkedIn</a> <a href="https://cohost.org/ash-e">Cohost</a> <a href="https://hachyderm.io/@ashentwisle">Mastodon</a> <a href="mailto://ash.entwisle@protonmail.com">Email</a>
             </p>
         </div>
     );
