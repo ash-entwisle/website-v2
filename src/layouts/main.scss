@@ -24,7 +24,7 @@
     --f-height: 175px; // TODO: make this dynamic
     --f-height-max: 500px;
     --f-height-min: 150px;
-    --m-height: calc(100vh - var(--h-height) - var(--f-height));
+    --m-height: calc(100vh - var(--f-height) - var(--h-height));
 
     // set default font size
     font-size:16px;    
@@ -34,6 +34,7 @@
 
 body {
     font-family: 'JetBrains Mono', monospace;
+
 
     // set default colors
     background-color: var(--c-darker);
@@ -83,7 +84,8 @@ main {
     background-color: var(--c-dark);
 
     // set height to fill the rest of the page at least
-    min-height: var(--m-height);
+    height: var(--m-height);
+    min-height: fit-content;
 
     // offset by 6vh down
     margin-top: var(--h-height);
