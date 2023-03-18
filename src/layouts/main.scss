@@ -31,6 +31,16 @@
     
 }
 
+// load all fonnts in /ttf/
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: 
+        url('./public/fonts/JetBrainsMono-Regular.woff2') format('woff2')
+        url('./public/fonts/JetBrainsMono-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     font-family: 'JetBrains Mono', monospace;
 
