@@ -17,7 +17,7 @@ export default function Footer() {
 }
 
 function MOTD() {
-    let motd = motds()[Math.floor(Math.random() * motds().length)];
+    let motd = motds()
     return (
         <div class="motd">
             <p><i>{ motd }</i></p>

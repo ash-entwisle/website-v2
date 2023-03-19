@@ -1,7 +1,7 @@
 let typing = false;
 
 
-export function animatedTyping(e: MouseEvent) {
+export function animatedTyping(e: Event) {
     let event = e.target as HTMLElement;
     const text = event.innerHTML;
     if (!typing) {

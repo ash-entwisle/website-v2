@@ -1,7 +1,7 @@
 
 export default function motds() {
     let motds = [
-        "\"Hello, World!\"",
+        "\"Hello, World!\"",                                                    
         "How much wood would a woodchuck chuck if a woodchuck could chuck wood?",
         "A wood chuck would chuck as much wood as a wood chuck could chuck if a wood chuck could chuck wood.",
         "Learning WASM...",
@@ -72,9 +72,10 @@ export default function motds() {
         "Birds of a feather we flock together, if we got a problem, we talk together",
         "lets go down south to escape the bad weather, woo hoo woo hoo",
         "I have the high ground",
-        "Hello There"
-
+        "Hello There",
+        "It makes us harder, the struggle continues",
+        "Dont hate the player, Dont hate the game, hate the troop man we take all blame",
     ];
     motds.push(`There are ${motds.length + 1} MOTDs!`);
-    return motds;
+    return motds[Math.floor(Math.random() * motds.length)];
 }
