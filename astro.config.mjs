@@ -8,10 +8,21 @@ import robotsTxt from "astro-robots-txt";
 import compress from "astro-compress";
 import sitemap from "astro-sitemap";
 import mdx from "@astrojs/mdx";
+import AstroPWA from '@vite-pwa/astro'
+
 
 // https://astro.build/config
 export default defineConfig({
   output: "server",
   adapter: cloudflare(),
-  integrations: [solidJs(), partytown(), prefetch(), robotsTxt(), compress(), sitemap(), mdx()]
+  integrations: [
+    solidJs(), 
+    partytown(), 
+    prefetch(), 
+    robotsTxt(), 
+    compress(), 
+    sitemap(), 
+    mdx(), 
+    AstroPWA(),
+  ]
 });
