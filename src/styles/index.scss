@@ -1,0 +1,52 @@
+@import 'variables.scss';
+
+main {
+    padding: 0 ;
+}
+
+.index {
+    // border box
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 5%;
+    padding-bottom: 10%;
+    h1 {
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 1.75rem;
+    }
+    h4 {
+        font-size: 1.5rem;
+    }
+    h5 {
+        font-size: 1.25rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+    
+
+    // if size is small, make h1 smaller
+    @media (max-width: 600px) {
+        h1 {
+            font-size: 1.75rem;
+        }
+        h2 {
+            font-size: 1.5rem;
+        }
+        h3 {
+            font-size: 1.25rem;
+        }
+        h4 {
+            font-size: 1rem;
+        }
+        p {
+            font-size: 1rem;
+        }
+    }
+}

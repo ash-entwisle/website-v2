@@ -1,9 +1,9 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Index from "../components";
-import '../layouts/index.scss';
+import '../styles/index.scss';
 ---
 
 <Layout title="Ash's Website !!">
-    <Index />
+    <Index client:load/>
 </Layout>

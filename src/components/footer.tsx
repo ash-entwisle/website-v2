@@ -1,4 +1,4 @@
-import motds from "../misc/motds";
+import motds from "../libs/motds";
 
 export default function Footer() {
     return (
@@ -40,7 +40,7 @@ function Copyright() {
     let output = currentYear > 2022 ? `2022-${currentYear}` : currentYear;
     return (
         <div class="copyright">
-            <p> &copy; <a href="https://reachout.ashentwisle.com">Ash Entwisle</a> {output} </p>
+            <p> &copy; <a href="https://ashentwisle.com/contact">Ash Entwisle</a> {output} </p>
         </div>
     );
 }

@@ -20,3 +20,8 @@ $h-height: 6vh;
 $f-height: 12.5vh;
 $m-height: calc(100vh - $h-height - $f-height - $f-height);
 
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('../fonts/JetBrainsMono-Regular.woff2') format('woff2'),
+         
+}
