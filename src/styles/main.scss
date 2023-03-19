@@ -8,12 +8,6 @@ main {
     // set padding above equal to header height
     margin-top: var(--h-height);
 
-    // set some basic padding
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 5%;
-    padding-bottom: 5%;
-
     // set min height to fill the rest of the page at least
     min-height: var(--m-height);
 }
