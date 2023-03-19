@@ -3,7 +3,7 @@ import motds from "../libs/motds";
 export default function Footer() {
     return (
         <footer>
-            <div class="misc-padding"></div>
+            <div class="logo"></div>
             <div class="footer">
                 <MOTD />
                 <Socials />
@@ -28,9 +28,21 @@ function MOTD() {
 function Socials() {
     return (
         <div class="socials">
-            <p>
-            <a href="https://github.com/ash-entwisle">Github</a> <a href="https://linkedin.com/in/ash-entwisle">LinkedIn</a> <a href="https://cohost.org/ash-e">Cohost</a> <a href="https://hachyderm.io/@ashentwisle">Mastodon</a> <a href="mailto://ash.entwisle@protonmail.com">Email</a>
-            </p>
+            <div class="contact">
+            <p><a href="https://github.com/ash-entwisle">Github</a></p>
+            </div>
+            <div class="contact">
+            <p><a href="https://linkedin.com/in/ash-entwisle">LinkedIn</a></p>
+            </div>
+            <div class="contact">
+            <p><a href="https://cohost.org/ash-e">Cohost</a></p>
+            </div>
+            <div class="contact">
+            <p><a href="https://hachyderm.io/@ashentwisle">Mastodon</a></p>
+            </div>
+            <div class="contact">
+            <p><a href="mailto://ash.entwisle@protonmail.com">Email</a></p>
+            </div>
         </div>
     );
 }

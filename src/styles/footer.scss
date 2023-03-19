@@ -1,0 +1,56 @@
+@import 'root.scss';
+
+footer {
+    // set dimensions
+    height: var(--f-height);
+    width: 100vw;
+
+    // set background color
+    background-color: var(--c-darker);
+
+    // set overflow to hidden
+    overflow: hidden;
+
+    // set to grid with 3 columns
+    display: grid;
+    grid-template-columns: 3fr 16fr 3fr;
+
+    // justify items in center
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+
+    .socials {
+        // align items in center
+        justify-self: center;
+        align-self: center;
+        
+        // flex items in row
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        
+        // set font size
+        font-size: 1rem;
+
+        .contact {
+            padding-left: 5px;
+            padding-right: 5px;
+
+            p {
+                line-height: 0%;
+            }
+        }
+    }
+
+    // set logo to bottom right
+    .logo {
+        justify-self: end;
+        align-self: end;
+        height: var(--f-height);
+        width: var(--f-height);
+    }
+
+
+}

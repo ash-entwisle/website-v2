@@ -1,0 +1,38 @@
+:root {
+    --c-black: #000000;
+    --c-darker: #1c1f26;
+    --c-dark: #282c34;
+    --c-grey: #3e4451;
+    --c-light: #abb2bf;
+    --c-white: #ffffff;
+
+    --c-red: #e06c75;
+    --c-orange: #d19a66;
+    --c-yellow: #e5c07b;
+    --c-green: #98c379;
+    --c-greener: #56b6c2; // TODO: find a better color
+    --c-cyan: #56b6c2;
+    --c-blue: #61afef;
+    --c-purple: #c678dd;
+    --c-pink: #be5046;
+    --c-brown: #d19a66; // TODO: find a better color
+
+    --h-height: 75px; // TODO: make this dynamic
+    --f-height: 170px; // TODO: make this dynamic
+    --m-height: calc(100vh - var(--h-height) - var(--f-height) + 75px); // equal to 100vh - footer height - header height, idk why i have to add 75px
+
+    // set default font size
+    font-size: 16px;
+
+}
+
+// load all fonnts in /ttf/
+@font-face {
+    font-family: 'JetBrains Mono';
+    src:
+        url('./public/fonts/JetBrainsMono-Regular.woff2') format('woff2') 
+        url('./public/fonts/JetBrainsMono-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

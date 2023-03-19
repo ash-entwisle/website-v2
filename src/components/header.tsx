@@ -11,7 +11,7 @@ export default function Header() {
 function Title() {
     // add svg logo here
     return (
-        <div class="title">
+        <div class="logo">
             <a href="/"><img src="/favicon.svg" alt="</>" /></a>
         </div>
     );
@@ -20,10 +20,18 @@ function Title() {
 function Nav() {
     return (
         <div class="nav">
-            <a href="/about">About</a>
-            <a href="/projects">Projects</a>
-            <a href="/blog">Blog</a>
-            <a href="/contact">Contact</a>
+            <div class="nav-item">
+                <a href="/about">About</a>
+            </div>
+            <div class="nav-item">
+                <a href="/projects">Projects</a>
+            </div>
+            <div class="nav-item">
+                <a href="/blog">Blog</a>
+            </div>
+            <div class="nav-item">
+                <a href="/contact">Contact</a>
+            </div>
         </div>
     );
 }

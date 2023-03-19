@@ -75,7 +75,9 @@ export default function motds() {
         "Hello There",
         "It makes us harder, the struggle continues",
         "Dont hate the player, Dont hate the game, hate the troop man we take all blame",
+        "[insert gif of low poly 3d rat rotating]",
     ];
     motds.push(`There are ${motds.length + 1} MOTDs!`);
     return motds[Math.floor(Math.random() * motds.length)];
+    //return "Dont hate the player, Dont hate the game, hate the troop man we take all blame";
 }

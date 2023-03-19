@@ -1,0 +1,60 @@
+// import everything from root.scss
+@import 'root.scss';
+
+header {
+    // set background color
+    background-color: var(--c-darker);
+    
+    // lock to top of screen
+    position: fixed;
+    top: 0;
+
+    // set dimensions
+    width: 100vw;
+    height: var(--h-height);
+    
+    // flex content in row with padding
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .nav {
+        // set padding on right
+        padding-right: 12.5px;
+
+        // flex nav items in row
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        // padd nav items
+        .nav-item {
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+
+
+        // if less than 750 px, set padding to 0
+        @media only screen and (max-width: 750px) {
+            padding-right: 0;
+        }
+    }
+
+    .logo {
+        // set dimensions
+        height: var(--h-height);
+        width: var(--h-height);
+
+        // hide if less than 500px
+        @media only screen and (max-width: 500px) {
+            display: none;
+        }
+    }
+
+    // if less than 450px, center content
+    @media only screen and (max-width: 500px) {
+        justify-content: center;
+    }
+
+}
