@@ -19,6 +19,9 @@ header {
     align-items: center;
     justify-content: space-between;
 
+    // set border box
+    box-sizing: border-box;
+
     .nav {
         // set padding on right
         padding-right: 12.5px;
