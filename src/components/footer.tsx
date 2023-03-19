@@ -10,7 +10,7 @@ export default function Footer() {
                 <Copyright />
             </div>
             <div class="logo">
-                <img src="/assets/logo.svg" alt="</>" />
+                <img src="/favicon.svg" alt="</>" />
             </div>
         </footer>
     );
