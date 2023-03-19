@@ -10,8 +10,7 @@ export default function Index() {
                 Feel free to check out my <a href="/projects">projects</a> or my <a href="/blog">blog</a>. 
             </p>
             <p>
-                If you want to get in touch, you can find my contact information <a href="/contact">here</a> 
-                and my CV <a href="/cv">here</a>. 
+                If you want to get in touch, <a href="/contact">feel free to reach out!</a>. 
             </p>
         </div>
     );
