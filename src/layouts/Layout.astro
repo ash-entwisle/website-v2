@@ -10,7 +10,6 @@ export interface Props {
 const { title, description } = Astro.props;
 
 // Removed From Head:
-//<meta name="generator" content={Astro.generator} />
 ---
 
 <!DOCTYPE html>
@@ -18,8 +17,12 @@ const { title, description } = Astro.props;
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta title={ title } content={ description }>
+        <meta name="author" content="Ash Entwisle">
+        <meta name="description" content={ description }>
+        <meta name="keywords" content="Ash Entwisle, Ash, Entwisle, Ash E, Blog, Projects, Dev, Developer, Software, Software Engineer">
+        <meta name="robots" content="index, follow">
         <meta name="theme-color" content="#282c34"/>
+        <meta name="generator" content={Astro.generator} />
         <link rel="preload" href="/fonts/JetBrainsMono-Regular.woff2" as="font" type="font/woff2" crossorigin>
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <title>{title}</title>
