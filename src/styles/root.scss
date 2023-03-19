@@ -19,7 +19,8 @@
 
     --h-height: 75px; // TODO: make this dynamic
     --f-height: 170px; // TODO: make this dynamic
-    --m-height: calc(100vh - var(--h-height) - var(--f-height) + 75px); // equal to 100vh - footer height - header height, idk why i have to add 75px
+    --m-height: calc(100vh - var(--h-height) - var(--f-height)); // remember to switch before building, astro bug go brrr
+    // --m-height: calc(100vh - var(--h-height) - var(--f-height) + 75); // equal to 100vh - footer height - header height, idk why i have to add 75px
 
     // set default font size
     font-size: 16px;
