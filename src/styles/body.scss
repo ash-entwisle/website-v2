@@ -21,10 +21,10 @@ body {
     // override default h1 styles
     h1 {
         font-weight: 400;
-        font-size: 4rem;
+        font-size: 3.5rem;
 
         // when less than 1000, make it 3rem
-        @media only screen and (max-width: 1000px) {
+        @media only screen and (max-width: 1025px) {
             font-size: 3rem;
         }
     }
@@ -32,7 +32,7 @@ body {
     // override default h2 styles
     h2 {
         font-weight: 400;
-        font-size: 3rem;
+        font-size: 2.5rem;
 
         // when less than 1000, make it 2rem
         @media only screen and (max-width: 1000px) {
@@ -42,7 +42,7 @@ body {
 
     // override default h3 styles
     h3 {
-        font-weight: 400;
+        font-weight: 300;
         font-size: 2rem;
 
         // when less than 1000, make it 1.5rem
@@ -81,6 +81,11 @@ body {
         padding: 0;
         margin: 0;
         border: 0;
+    }
+
+    sub {
+        font-size: 0.75rem;
+        font-weight: 100;
     }
 
     // remove margins, borders and padding

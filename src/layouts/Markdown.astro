@@ -11,7 +11,9 @@ const { frontmatter }= Astro.props;
     <div class="mdheader">
         <h1>{ frontmatter.title }</h1>
         <h2><b>By: <a><i> { frontmatter.author } </i></a></b>@ {frontmatter.date}</h2>
-        <p><i> {frontmatter.description} </i></p>
+        {
+            frontmatter.hidedescription ? "" : <p><i> {frontmatter.description} </i></p>
+        }
     </div>
     <div class="mdcontent">
         <slot />

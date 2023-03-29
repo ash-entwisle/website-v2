@@ -76,6 +76,11 @@ export default function motds() {
         "It makes us harder, the struggle continues",
         "Dont hate the player, Dont hate the game, hate the troop man we take all blame",
         "[insert gif of low poly 3d rat rotating]",
+        "born to :3, forced to :/",
+        "heat from fire?",
+        "fire from heat!",
+        "posture check",
+        "hydration check",
     ];
     motds.push(`There are ${motds.length + 1} MOTDs!`);
     return motds[Math.floor(Math.random() * motds.length)];

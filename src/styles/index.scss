@@ -13,14 +13,66 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-
-
+    //height: 85vh;
+    margin-top: var(--h-height);
+    min-height: var(--m-height);
+    width: 100vw;
+    
+    background-color: var(--c-dark);
+    
+    
     .index {
+        box-sizing: content-box;
+        padding: 7.5%;
         width: 70%;
 
         p {
             width: 70%;
+        }
+    }
+    .readme {
+        width: 70%;
+        p {
+            font-weight: 200;
+        }
+
+
+    }
+
+    .projects {
+        width: 70%;
+    }
+
+    .posts {
+        width: 70%;
+
+    }
+
+    // if less than 1000px wide, set p width to 100%
+    @media only screen and (max-width: 1000px) {
+        .index {
+            width: 85%;
+            p {
+                width: 100%;
+            }
+        }
+        .readme {
+            width: 85%;
+            p {
+                width: 100%;
+            }
+        }
+        .projects {
+            width: 85%;
+            p {
+                width: 100%;
+            }
+        }
+        .posts {
+            width: 85%;
+            p {
+                width: 100%;
+            }
         }
     }
 }

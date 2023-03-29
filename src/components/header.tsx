@@ -12,7 +12,7 @@ function Title() {
     // add svg logo here
     return (
         <div class="logo">
-            <a href="/"><img src="/favicon.svg" alt="</>" /></a>
+            <a href="/"><img src="/assets/logo-noback.svg" alt="</>" /></a>
         </div>
     );
 }

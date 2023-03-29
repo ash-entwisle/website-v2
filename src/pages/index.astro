@@ -1,9 +1,15 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Index from "../components";
+import Landing from "../components/landing";
+import Readme from "../components/IndexReadme.astro";
+import Projects from "../components/IndexProjects.astro";
+import BlogPosts from "../components/IndexBlogPosts.astro";
 import '../styles/index.scss';
+
 ---
 
-<Layout title="Ash's Website !!" description="Hello World, I'm Ash!">
-    <Index client:load/>
+<Layout title="Ash's Website !!" description="Hello World, I'm Ash! a 1st year Comp-Sci student who loves rust, linux and blue ikea sharks :3 feel free to check out my projects and blog">
+    <Landing client:load/>
+
+
 </Layout>
