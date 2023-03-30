@@ -33,7 +33,7 @@ footer {
         align-self: center;
         
         // flex items in row
-        display: flex;
+        display: inline-flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
@@ -47,10 +47,16 @@ footer {
         .contact {
             padding-left: 5px;
             padding-right: 5px;
+            padding-top: 2.5px;
+            padding-bottom: 2.5px;
 
             p {
                 line-height: 0%;
             }
+        }
+        // when less than 250px wide, hide
+        @media only screen and (max-width: 400px) {
+            display: none;
         }
     }
 
@@ -67,6 +73,11 @@ footer {
                 display: none;
             }
         }
+
+        // if less than 1250px, hide
+        @media only screen and (max-width: 400px) {
+            display: none;
+        }
     }
 
     // if less than 750, flex
@@ -78,12 +89,12 @@ footer {
         align-items: center;
 
         padding: 10px;
-        height: 100px;
+        height: 150px;
     }
 
-    // if less than 350, increase height
-    @media only screen and (max-width: 350px) {
-        height: 125px;
+    @media only screen and (max-width: 400px) {
+        height: fit-content;
+        padding: 5px;
     }
 
 }
