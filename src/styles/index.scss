@@ -23,29 +23,13 @@ main {
     
     .index {
         box-sizing: content-box;
-        padding: 7.5%;
+        padding-bottom: 0;
+        padding-top: 2.5%;
         width: 70%;
 
         p {
             width: 70%;
         }
-    }
-    .readme {
-        width: 70%;
-        p {
-            font-weight: 200;
-        }
-
-
-    }
-
-    .projects {
-        width: 70%;
-    }
-
-    .posts {
-        width: 70%;
-
     }
 
     // if less than 1000px wide, set p width to 100%
@@ -56,23 +40,11 @@ main {
                 width: 100%;
             }
         }
-        .readme {
-            width: 85%;
-            p {
-                width: 100%;
-            }
-        }
-        .projects {
-            width: 85%;
-            p {
-                width: 100%;
-            }
-        }
-        .posts {
-            width: 85%;
-            p {
-                width: 100%;
-            }
-        }
+
+    }
+
+    // if less than 750px wide, increase min-height by 25px
+    @media only screen and (max-width: 750px) {
+        min-height: calc(var(--m-height) + 75px);
     }
 }

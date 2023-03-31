@@ -1,0 +1,107 @@
+@import "root.scss";
+
+main {
+    justify-content: start;
+}
+
+.search {
+    padding: 25px;
+
+    // flex the search bar
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 75vw;
+
+    // style the search bar
+    input {
+        width: 350px;
+        padding: 10px;
+        border-radius: 25px;
+        border: 0;
+        background-color: var(--c-light);
+        color: var(--c-dark);
+        font-size: 1rem;
+        font-weight: 300;
+        outline: none;
+    }
+
+    // style the search button
+    button {
+        padding: 10px;
+        width: 100px;
+        border-radius: 25px;
+        border: 0;
+        background-color: var(--c-light);
+        color: var(--c-dark);
+        font-size: 1rem;
+        font-weight: 300;
+        outline: none;
+        cursor: pointer;
+    }
+}
+
+.projects {
+    width: 100%;
+
+    .card {
+        padding: 25px;
+        border-radius: 25px;
+        
+        a {
+            text-decoration: none;
+            color: var(--c-white);
+        }
+
+        h3 {
+            font-weight: 400;
+            font-size: 1.5rem;
+            margin: 0;
+        }
+
+        h4 {
+            font-weight: 300;
+            font-size: 1rem;
+            margin: 0;
+            padding: 10px;
+        }
+
+        h5 {
+            font-weight: 300;
+            font-size: 1rem;
+            margin: 0;
+            padding-top: 10px;
+
+            a {
+                padding-left: 7.5px;
+            }
+        }
+
+        p {
+            font-weight: 200;
+            font-size: 1rem;
+            margin: 0;
+        }
+
+        // on hover, transition to grey
+        &:hover {
+            transition: color 0.25s ease;
+            * {
+                color: var(--c-light);
+            }
+
+            h5 a {
+                color: var(--c-white);
+            }
+
+            h3 {
+                color: var(--c-white);
+            }
+
+            h4 {
+                color: var(--c-white);
+            }
+        }
+    }
+}

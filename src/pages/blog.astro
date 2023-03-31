@@ -1,9 +1,41 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Search from "../components/Search.astro";
+import Card from "../components/Card.astro";
+import "../styles/index.scss";
+import "../styles/posts.scss";
+
+const posts = await Astro.glob("./posts/*.{md,mdx}");
+
+// remove all projects that don't match the search query
+const filteredPosts = posts.filter((post) => {
+    const postData = [
+        post.frontmatter.title,
+        post.frontmatter.description,
+        post.frontmatter.tags.join(" "),
+        post.frontmatter.author,
+    ].join(" ");
+    const searchQuery = Astro.url.searchParams.get("search") || "";
+    // if search query is in project data or if there is no search query at all return true
+    return (postData.toLowerCase().includes(searchQuery.toLowerCase()) || searchQuery === "" ) && !post.frontmatter.project;
+});
 ---
 
-<Layout title="Blog" description="Welcome to my blog!!">
-    <h1>Blog</h1>
-    <p>Coming soon!</p>
+<Layout title="Ash's Blog" description="Here are my blogposts">
+    <Search />
+    <div class="projects">
+        {filteredPosts.map((post) => (
+            <Card
+                title={post.frontmatter.title}
+                date={post.frontmatter.date}
+                author={post.frontmatter.author}
+                description={post.frontmatter.description}
+                tags={post.frontmatter.tags}
+                link={post.url}
+                type="blog"
+            />
+        ))}
+    </div>
+    <h6>// TODO: Fix scss</h6>
 </Layout>
 

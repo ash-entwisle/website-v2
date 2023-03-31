@@ -61,7 +61,7 @@
             "sizes": "any",
             "type": "image/svg+xml",
             "purpose": "any maskable"
-        }
+        },
         {
             "src": "favicon.ico",
             "sizes": "any",

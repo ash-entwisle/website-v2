@@ -1,7 +1,36 @@
 ---
+import Card from "./Card.astro"
 
+const posts = await Astro.glob("../pages/posts/*.{md,mdx,astro}")
+
+// filter all posts that are not drafts
+const publishedPosts = posts.filter((post) => !post.frontmatter.draft)
+
+// sort posts by date
+publishedPosts.sort((a, b) => {
+    const date1 = Number(b.frontmatter.date.split("-").join(""))
+    const date2 = Number(a.frontmatter.date.split("-").join(""))
+    return date1 - date2
+})
+
+// get the first 5 posts
+const latestPosts = publishedPosts.slice(0, 4)
 ---
 
 <div class="posts" id="posts">
-    <h2>BlogPosts</h2>
+    <h3>Recent Blog Posts</h3>
+    <div class="cards">
+
+        {latestPosts.map((post) => (
+            <Card
+                title={post.frontmatter.title}
+                date={post.frontmatter.date}
+                author={post.frontmatter.author}
+                description={post.frontmatter.description}
+                tags={post.frontmatter.tags}
+                link={post.url}
+            />
+        ))}
+    </div>
+    <small> Feel free to check out more of my <a href="/blog">blog posts here</a></small>
 </div>

@@ -13,14 +13,41 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    //height: 85vh;
+    margin-top: var(--h-height);
+    min-height: var(--m-height);
+    width: 100vw;
 
+    background-color: var(--c-dark);
 
 
     .error {
-        width: 75%;
+        box-sizing: content-box;
+        padding-bottom: 0;
+        padding-top: 2.5%;
+        padding-left: 25px;
+        padding-right: 25px;
+        width: 70%;
 
         p {
-            width: 80%;
+            width: 70%;
         }
+    }
+
+    // if less than 1000px wide, set p width to 100%
+    @media only screen and (max-width: 1000px) {
+        .index {
+            width: 85%;
+
+            p {
+                width: 100%;
+            }
+        }
+
+    }
+
+    // if less than 750px wide, increase min-height by 25px
+    @media only screen and (max-width: 750px) {
+        min-height: calc(var(--m-height) + 75px);
     }
 }

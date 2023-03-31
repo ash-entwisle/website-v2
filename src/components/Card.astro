@@ -1,0 +1,32 @@
+---
+export interface Props {
+    title: string;
+    date: string;
+    author: string;
+    description: string;
+    tags: string[];
+    link: string;
+    type: string;
+}
+
+const { title, date, author, description, tags, link, type } = Astro.props;
+
+const trimmedDescription = description.length > 250 ? description.substring(0, description.lastIndexOf(" ", 250)) + "..." : description;
+const joinedTags = tags.map(tag => "#" + tag).join(" ")
+
+---
+
+<div class="card">
+    <a href={ link }>
+        <h3>{title}</h3>
+        <h4><em>{author} {date}</em></h4>
+        <p>{trimmedDescription}</p>
+        <h5><em>Tags: 
+            {
+                tags.map(tag => {
+                    return <a href={"/" + type + "?search=" + tag}>#{tag}</a>
+                })
+            }
+        </em></h5>
+    </a>
+</div>
