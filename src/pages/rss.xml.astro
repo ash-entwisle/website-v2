@@ -1,0 +1,11 @@
+---
+import rss, { pagesGlobToRssItems } from '@astrojs/rss';
+
+console.log(await import.meta.glob('./src/pages/posts/*.{md,mdx}'))
+return rss({
+  title: 'Buzz’s Blog',
+  description: 'A humble Astronaut’s guide to the stars',
+  site: "test",
+});
+
+---
